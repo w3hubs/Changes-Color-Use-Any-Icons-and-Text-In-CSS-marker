@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Changes Color, Use Any Icons and Text In CSS::marker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+      body {
+      padding: 0;
+      margin: 0;
+      font-family: "Nunito Sans";
+      }
+      section{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      }
+      ::marker{
+      font-size: 20px;
+      font-weight: 900;
+      }
+      li{
+      padding: 5px;
+      }
+      .items-1 ::marker {
+      color: #194350;
+      }
+      .items-1 li:hover::marker {
+      color: #126e82;
+      }
+      .items-2 ::marker {
+      color: #206a5d;
+      font-family: 'FontAwesome';
+      content: "\f101";
+      }
+      .items-2 li:hover::marker {
+      color: #29bb89;
+      }
+      .items-3 ::marker {
+      color: #464f41;
+      content: 'HI'
+      }
+      .items-3 li:hover::marker {
+      color: #007580;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="items-1">
+        <ul>
+          <li>Items 1</li>
+          <li>Items 2</li>
+          <li>Items 3</li>
+          <li>Items 4</li>
+          <li>Items 5</li>
+        </ul>
+      </div>
+      <div class="items-2">
+        <ul>
+          <li>Items 1</li>
+          <li>Items 2</li>
+          <li>Items 3</li>
+          <li>Items 4</li>
+          <li>Items 5</li>
+        </ul>
+      </div>
+      <div class="items-3">
+        <ul>
+          <li>Items 1</li>
+          <li>Items 2</li>
+          <li>Items 3</li>
+          <li>Items 4</li>
+          <li>Items 5</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
